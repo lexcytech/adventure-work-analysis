@@ -1,5 +1,5 @@
 # ADVENTURE-WORK-ANALYSIS
-![](https://github.com/lexcytech/adventure-work-analysis/blob/main/project2/download.png)
+![](https://github.com/lexcytech/adventure-work-analysis/blob/main/download.png)
 
 ## Project Overview 
 Project Objective: Comprehensive Sales and Customer Analysis
@@ -8,7 +8,7 @@ The objective of this project is to conduct a comprehensive analysis of sales an
 ## Data Source/description 
 I was given a folder containing raw csv files.
 This dataset contains sales transactions from a chain store, spanning three years from 2015 to 2017. The data captures various aspects of the sales process, including order details, product information, customer demographics, and territorial distribution. This comprehensive dataset provides a foundation for in-depth analysis and insights into sales performance, customer behavior, and operational efficiency
-![](project2/rawfile_folder)
+![](https://github.com/lexcytech/adventure-work-analysis/tree/main/rawfile_folder)
 ---
 ## Skills demonstrated/ Tools 
 1.	Excel for data connection 
@@ -24,7 +24,8 @@ The first name and last name were merged to create a new column called "Fullname
 The gender column was transformed from "M" to "Male" and "F" to "Female."
 The marital status column was transformed from "S" to "Single" and "M" to "Married."
 All other redundant columns were deleted.
-3. **Calendar Table**:
+![](https://github.com/lexcytech/adventure-work-analysis/blob/main/TRANSFORMED-CUSTOMER.png)
+4. **Calendar Table**:
 The Calendar table was imported into Power BI from the raw CSV file.
 Transformation in Power Query Editor
 Opened the Calendar table in the Power Query Editor.
@@ -44,7 +45,7 @@ MonthName = Date.ToText([Date], "MMMM")
 -   *Year*
 Formula:
 Year = Date.Year([Date])
-![](https://github.com/lexcytech/adventure-work-analysis/blob/main/project2/rawfile_folder/Calendar.csv)
+![](https://github.com/lexcytech/adventure-work-analysis/blob/main/TRANSFORMED-CALENDER.png)
     **Validation**
 Ensured that the new columns contained the correct values by cross-referencing a sample of dates with an external calendar.
 Applied the changes and loaded the transformed Calendar table back into the Power BI model.
@@ -55,8 +56,11 @@ The stock date column was formatted to the data type "Date."
 An "Amount Paid" column was created using DAX to relate the unit price in the product table and the quantity in the sales table.
 An "Order Profit" column was created using DAX to relate the product cost, unit price in the product table, and the order quantity in the sales table.
 Two DAX measures were created: one summing the "Amount Paid" column to calculate "Total Revenue" and another summing the "Order Profit" column to calculate "Total Profit."
-
+![](https://github.com/lexcytech/adventure-work-analysis/blob/main/TRANSFORMED-SALES-TABLE.png)
+---
 ## ANALYSIS OBEJECTIVES AND FINDINGS 
+![](https://github.com/lexcytech/adventure-work-analysis/blob/main/DASHBOARD-PAGE-1.png)
+![](https://github.com/lexcytech/adventure-work-analysis/blob/main/DASHBOARD-PAGE-2.png)
 1. **Total Sales**:
 Analysis: The dashboard shows a total sales amount of 84.17K.
 Objective: Aim to increase total sales by implementing targeted marketing campaigns and promotional activities to boost revenue.
